@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://qish.me/"/>
-  <updated>2017-12-07T13:43:38.511Z</updated>
+  <updated>2017-12-08T02:44:39.266Z</updated>
   <id>http://qish.me/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的猜想</title>
+    <link href="http://qish.me/2017/12/08/%E6%88%91%E7%9A%84%E7%8C%9C%E6%83%B3/"/>
+    <id>http://qish.me/2017/12/08/我的猜想/</id>
+    <published>2017-12-08T02:12:53.000Z</published>
+    <updated>2017-12-08T02:44:39.266Z</updated>
+    
+    <content type="html"><![CDATA[<hr><blockquote><ul><li>传统制造业流程</li><li>工作岗位 竞争力</li><li>博客 感悟</li></ul></blockquote><h3 id="传统制造业"><a href="#传统制造业" class="headerlink" title="传统制造业"></a>传统制造业</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 工厂定制</span><br><span class="line">2. 组装 调校</span><br><span class="line">3. 运输</span><br><span class="line">4. 销售</span><br><span class="line">5. 售后 客服</span><br></pre></td></tr></table></figure><h3 id="工作岗位"><a href="#工作岗位" class="headerlink" title="工作岗位"></a>工作岗位</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 信息不对称</span><br><span class="line">2. 掌握更多的信息</span><br><span class="line">3. 解决问题 提供解决方案</span><br><span class="line">4. 汇报工作 交换信息</span><br></pre></td></tr></table></figure><h3 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">勇敢尝试</span><br></pre></td></tr></table></figure><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;传统制造业流程&lt;/li&gt;
+&lt;li&gt;工作岗位 竞争力&lt;/li&gt;
+&lt;li&gt;博客 感悟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;传统制造业&quot;&gt;&lt;a href=&quot;#传统制造业&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+    
+      <category term="胡言乱语" scheme="http://qish.me/tags/%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新的博客</title>
+    <link href="http://qish.me/2017/12/07/%E6%96%B0%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://qish.me/2017/12/07/新的博客/</id>
+    <published>2017-12-07T14:43:11.000Z</published>
+    <updated>2017-12-08T02:13:49.474Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://qish.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>辨析 Sass 中的 Map 和 List</title>
