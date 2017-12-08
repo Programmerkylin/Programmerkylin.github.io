@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://qish.me/"/>
-  <updated>2017-12-08T02:44:39.266Z</updated>
+  <updated>2017-12-08T03:07:25.229Z</updated>
   <id>http://qish.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片测试</title>
+    <link href="http://qish.me/2017/12/08/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/"/>
+    <id>http://qish.me/2017/12/08/图片测试/</id>
+    <published>2017-12-08T02:59:09.000Z</published>
+    <updated>2017-12-08T03:07:25.229Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>[]里面图片标题。<br><img src="/2017/12/08/图片测试/cmd.jpg" alt="cmd"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;[]里面图片标题。&lt;br&gt;&lt;img src=&quot;/2017/12/08/图片测试/cmd.jpg&quot; alt=&quot;cmd&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://qish.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>我的猜想</title>
