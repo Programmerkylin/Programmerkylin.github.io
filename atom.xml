@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://qish.me/"/>
-  <updated>2017-12-08T03:07:25.229Z</updated>
+  <updated>2017-12-08T07:58:49.243Z</updated>
   <id>http://qish.me/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>排名算法</title>
+    <link href="http://qish.me/2017/12/08/%E6%8E%92%E5%90%8D%E7%AE%97%E6%B3%95/"/>
+    <id>http://qish.me/2017/12/08/排名算法/</id>
+    <published>2017-12-08T07:33:09.000Z</published>
+    <updated>2017-12-08T07:58:49.243Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><ul><li>Hacker News </li><li>Reddit </li><li>Stack Overflow </li><li>牛顿冷却定律 </li><li>威尔逊区间 </li><li>贝叶斯平均 </li></ul></blockquote><hr><h3 id="Hacker-News"><a href="#Hacker-News" class="headerlink" title="Hacker News"></a>Hacker News</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(p – 1) / (t + 2)^1.5</span><br><span class="line"></span><br><span class="line">其中，</span><br><span class="line">1）p 表示文章得到的投票数，之所以要使用 (p – 1)，应该是想去掉文章提交者的那一票。</span><br><span class="line">2）(t + 2)^1.5， 这个是时间因子。t 表示当前时间与文章提交时间间隔的小时数。但为什么要加 2 之后再取 1.5 的幂，似乎就没什么道理可言了，也许是个 trial-and-error 的结果吧。</span><br></pre></td></tr></table></figure><h3 id="Reddit"><a href="#Reddit" class="headerlink" title="Reddit"></a>Reddit</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from datetime import datetime, timedelta</span><br><span class="line">from math import log</span><br><span class="line"></span><br><span class="line">epoch = datetime(1970, 1, 1)</span><br><span class="line"></span><br><span class="line">def epoch_seconds(date):</span><br><span class="line">    &quot;&quot;&quot;Returns the number of seconds from the epoch to date.&quot;&quot;&quot;</span><br><span class="line">    td = date - epoch</span><br><span class="line">    return td.days * 86400 + td.seconds + (float(td.microseconds) / 1000000)</span><br><span class="line"></span><br><span class="line">def score(ups, downs):</span><br><span class="line">    return ups - downs</span><br><span class="line"></span><br><span class="line">def hot(ups, downs, date):</span><br><span class="line">    &quot;&quot;&quot;The hot formula. Should match the equivalent function in postgres.&quot;&quot;&quot;</span><br><span class="line">    s = score(ups, downs)</span><br><span class="line">    order = log(max(abs(s), 1), 10)</span><br><span class="line">    sign = 1 if s &gt; 0 else -1 if s &lt; 0 else 0</span><br><span class="line">    seconds = epoch_seconds(date) - 1134028003</span><br><span class="line">    return round(order + sign * seconds / 45000, 7)</span><br></pre></td></tr></table></figure><h3 id="贝叶斯平均"><a href="#贝叶斯平均" class="headerlink" title="贝叶斯平均"></a>贝叶斯平均</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">加权 (WR) = (v ÷ (v+m)) × R + (m ÷ (v+m)) × C</span><br><span class="line">　  - WR， 加权得分（weighted rating）。</span><br><span class="line">　　- R，该电影的用户投票的平均得分（Rating）。</span><br><span class="line">　　- v，该电影的投票人数（votes）。</span><br><span class="line">　　- m，排名前250名的电影的最低投票数（现在为3000）。</span><br><span class="line">　　- C， 所有电影的平均得分（现在为6.9）。</span><br></pre></td></tr></table></figure><p>[参考文献]:</p><p><a href="http://www.ruanyifeng.com/blog/2012/03/ranking_algorithm_wilson_score_interval.html" target="_blank" rel="noopener">基于用户投票的排名算法</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Hacker News &lt;/li&gt;
+&lt;li&gt;Reddit &lt;/li&gt;
+&lt;li&gt;Stack Overflow &lt;/li&gt;
+&lt;li&gt;牛顿冷却定律 &lt;/li&gt;
+&lt;li&gt;威尔逊区间 &lt;/li&gt;
+&lt;li&gt;贝叶斯平均 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/b
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://qish.me/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>图片测试</title>
